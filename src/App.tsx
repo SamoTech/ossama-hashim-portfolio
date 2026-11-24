@@ -23,6 +23,7 @@ import {
   FileText,
   Download
 } from 'lucide-react';
+import GitHubStats from './components/GitHubStats';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -42,6 +43,7 @@ export default function App() {
             <a href="#about" className="hover:text-indigo-600 transition-colors">About</a>
             <a href="#apps" className="hover:text-indigo-600 transition-colors">Apps</a>
             <a href="#books" className="hover:text-indigo-600 transition-colors">Books</a>
+            <a href="#github" className="hover:text-indigo-600 transition-colors">GitHub</a>
             <a href="#projects" className="hover:text-indigo-600 transition-colors">Projects</a>
             <a href="#contact" className="hover:text-indigo-600 transition-colors">Contact</a>
           </nav>
@@ -79,6 +81,13 @@ export default function App() {
               className="block py-2 text-slate-700 hover:text-indigo-600 font-medium border-b border-slate-100"
             >
               Books
+            </a>
+            <a 
+              href="#github" 
+              onClick={() => setMobileMenuOpen(false)}
+              className="block py-2 text-slate-700 hover:text-indigo-600 font-medium border-b border-slate-100"
+            >
+              GitHub
             </a>
             <a 
               href="#projects" 
@@ -504,6 +513,9 @@ export default function App() {
             </p>
           </div>
         </section>
+
+        {/* 4b. GITHUB STATS SECTION (live from the GitHub API) */}
+        <GitHubStats />
 
         {/* 5. OPEN SOURCE PROJECTS SECTION */}
         <section id="projects" className="scroll-mt-24 space-y-8">
