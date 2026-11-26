@@ -13,6 +13,7 @@ import {
   Github, 
   Linkedin, 
   Youtube, 
+  Instagram,
   Globe, 
   Menu, 
   X, 
@@ -406,6 +407,18 @@ export default function App() {
                       <ExternalLink size={12} />
                     </a>
                   </div>
+                  <div className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-100">
+                    <span className="text-sm font-medium text-slate-700">Chapter 1 — Free listen (AI narration)</span>
+                    <a 
+                      href="https://www.youtube.com/watch?v=X3bWQNa-sTo" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-indigo-600 hover:text-indigo-700"
+                    >
+                      <span>Listen on YouTube</span>
+                      <ExternalLink size={12} />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -508,6 +521,21 @@ export default function App() {
                 className="underline font-semibold hover:text-indigo-700 inline-flex items-center gap-1 ml-1"
               >
                 <span>https://www.amazon.com/author/ossama.hashim</span>
+                <ExternalLink size={14} />
+              </a>
+            </p>
+          </div>
+
+          <div className="bg-emerald-50 border border-emerald-100 rounded-2xl p-6 text-center">
+            <p className="text-emerald-900 font-medium">
+              Free coloring pages — 12 pages from 3 books:{' '}
+              <a 
+                href="https://drive.google.com/file/d/1d-QVzT2xoBsgjVqVCQlUW9LbgLuZVNVr/view?usp=drivesdk" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline font-semibold hover:text-emerald-700 inline-flex items-center gap-1 ml-1"
+              >
+                <span>Download free (Google Drive)</span>
                 <ExternalLink size={14} />
               </a>
             </p>
@@ -870,6 +898,54 @@ export default function App() {
                   >
                     <BookOpen size={18} className="text-amber-600" />
                     <span>Goodreads Author Page</span>
+                    <ExternalLink size={12} className="ml-auto text-slate-400" />
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.instagram.com/ossama.hashim" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-2 rounded-xl hover:bg-white transition-colors text-slate-700 hover:text-indigo-600 font-medium text-sm"
+                  >
+                    <Instagram size={18} className="text-pink-600" />
+                    <span>Instagram</span>
+                    <ExternalLink size={12} className="ml-auto text-slate-400" />
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.threads.com/@ossam.hashim" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-2 rounded-xl hover:bg-white transition-colors text-slate-700 hover:text-indigo-600 font-medium text-sm"
+                  >
+                    <Globe size={18} className="text-indigo-600" />
+                    <span>Threads</span>
+                    <ExternalLink size={12} className="ml-auto text-slate-400" />
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.pinterest.com/ossamahashimbooks" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-2 rounded-xl hover:bg-white transition-colors text-slate-700 hover:text-indigo-600 font-medium text-sm"
+                  >
+                    <Globe size={18} className="text-indigo-600" />
+                    <span>Pinterest</span>
+                    <ExternalLink size={12} className="ml-auto text-slate-400" />
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.tiktok.com/@ossamahashimbooks" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-2 rounded-xl hover:bg-white transition-colors text-slate-700 hover:text-indigo-600 font-medium text-sm"
+                  >
+                    <Globe size={18} className="text-indigo-600" />
+                    <span>TikTok</span>
                     <ExternalLink size={12} className="ml-auto text-slate-400" />
                   </a>
                 </li>
